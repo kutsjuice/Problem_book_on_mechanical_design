@@ -11,12 +11,12 @@ import os.path as pt
 
 
 def opendir(folder):
-    print(folder)
+    # print(folder)
     l_dir = os.listdir(folder)
     if 'README.md' in l_dir:
         print('README.md exist')
     else:
-        f = open('README.md','w')
+        f = open(folder+'\\'+'README.md','w')
         f.close()
     for name in l_dir:
         c_folder = folder + '\\' + name
